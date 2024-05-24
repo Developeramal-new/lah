@@ -1,0 +1,42 @@
+.bar {
+  ul {
+    list-style-type: none;
+  }
+  li {
+    display: inline;
+    &:hover {
+      color: rgb(195, 0, 0);
+      cursor: pointer;
+    }
+  }
+}
+.items {
+  cursor: pointer;
+  .col-1 {
+    &:hover {
+      color: rgb(195, 0, 0);
+    }
+  }
+}
+
+.dropdown {
+  &:hover {
+    .dropdown-menu {
+      display: block;
+      opacity: 1;
+      transform: translateY(0rem);
+    }
+  }
+  .dropdown-menu {
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(1rem);
+    opacity: 0;
+    .dropdown-item {
+      &:focus {
+        background-color: rgb(195, 0, 0);
+        color: white;
+      }
+    }
+  }
+}
