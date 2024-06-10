@@ -1,22 +1,24 @@
 .bar {
-  ul {
-    list-style-type: none;
-  }
-  li {
-    display: inline;
-    &:hover {
-      color: rgb(195, 0, 0);
-      cursor: pointer;
-    }
-  }
+  background-color: white;
+  font-weight: 500;
 }
 .items {
   cursor: pointer;
-  .col-1 {
+  div {
+    padding: 1rem;
     &:hover {
       color: rgb(195, 0, 0);
     }
   }
+
+  .btn-bk {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.btn {
+  padding: 1rem;
 }
 
 .dropdown {
@@ -33,10 +35,18 @@
     transform: translateY(1rem);
     opacity: 0;
     .dropdown-item {
+      &:hover {
+        color: rgb(195, 0, 0);
+      }
       &:focus {
         background-color: rgb(195, 0, 0);
         color: white;
       }
     }
   }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
 }
