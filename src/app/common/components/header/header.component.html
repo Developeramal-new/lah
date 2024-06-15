@@ -2,7 +2,7 @@
   <div class="row" style="height: 10vh !important">
     <div class="col-12 bar d-flex align-items-center">
       <div>
-        <img src="../../../../assets/common/LH-PNG1.jpg" alt="" />
+        <img src="assets/common/LH-PNG1.jpg" alt="" />
       </div>
       <div class="ms-3 title">
         Lights & Hearts <br />
@@ -10,29 +10,61 @@
       </div>
       <div class="m-auto"></div>
       <div class="d-flex items align-items-center">
-        <div>Home</div>
-        <div>Films</div>
+        <div [routerLink]="['/']" routerLinkActive="router-link-active">
+          Home
+        </div>
+        <div [routerLink]="['/photography']">Films</div>
         <div class="dropdown">
           Photography
           <ul class="dropdown-menu">
             <li>
-              <button class="dropdown-item" type="button">Wedding</button>
+              <button
+                [routerLink]="['/photography']"
+                class="dropdown-item"
+                type="button"
+              >
+                Wedding
+              </button>
             </li>
             <li>
-              <button class="dropdown-item" type="button">Pre Wedding</button>
+              <button
+                [routerLink]="['/photography']"
+                class="dropdown-item"
+                type="button"
+              >
+                Pre Wedding
+              </button>
             </li>
             <li>
-              <button class="dropdown-item" type="button">Post Wedding</button>
+              <button
+                [routerLink]="['/photography']"
+                class="dropdown-item"
+                type="button"
+              >
+                Post Wedding
+              </button>
             </li>
             <li>
-              <button class="dropdown-item" type="button">Maternity</button>
+              <button
+                [routerLink]="['/photography']"
+                class="dropdown-item"
+                type="button"
+              >
+                Maternity
+              </button>
             </li>
             <li>
-              <button class="dropdown-item" type="button">Fashion</button>
+              <button
+                [routerLink]="['/photography']"
+                class="dropdown-item"
+                type="button"
+              >
+                Fashion
+              </button>
             </li>
           </ul>
         </div>
-        <div>About Us</div>
+        <div [routerLink]="['/aboutus']">About Us</div>
         <div class="btn-bk" style="color: white; background-color: black">
           Book Now
         </div>
